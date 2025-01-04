@@ -24,4 +24,6 @@ Backend: Node.js and Express.js
 Database: MongoDB
 AI Integration: OpenAI API
 Styling: TailwindCSS
+
+
 [Masterpiece Wireframe and Mockup](https://www.figma.com/design/nT9NFoqYWtMsTUKLYkH2Vq/Masterpiece?node-id=0-1&t=CUvurKz6K6hZlD2B-1)
