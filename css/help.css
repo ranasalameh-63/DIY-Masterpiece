@@ -68,88 +68,162 @@ h5{
 
 /********************************************************/
 /*Hero section*/
-#p1{
-    padding-top: 80px;
+
+.intro {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .intro .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro .content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+  }
+  
+  .intro .text {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .intro .text h2 {
+    font-size: 1.8rem;
+    color: #222831;
+    margin-bottom: 10px;
+  }
+  
+  .intro .text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .intro .text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .intro .text ul li {
+    font-size: 1rem;
+    color: #eaaa22;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .intro .text ul li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: #3a7bd5;
+  }
+  
+  .intro .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .intro .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 450px;
+  }
+  
+  .divider {
+    width: 80%; 
+    height: 2px; 
+    background: linear-gradient(to right, #eaaa22, #222831); 
+    margin: 30px auto; 
+    border-radius: 5px; 
+  }
+
+#text {
+    color: #222831;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  #p1{
     font-family: "Dancing Script", cursive;
     font-size: 30px;
-    text-align: center;
-    color: #ffbe33;
-}
-#p2,#p3{
-    font-size: 16px;
-    text-align: center;
+    font-weight: bold;
     color: #222831;
-
-}
-#div-container1{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    gap: 50px;
-}
-#div-container2{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 70px;
-    gap: 50px;
-}
-
-
-#cardd {
-    transition: all 0.3s ease-in-out; 
-    cursor: pointer; 
-}
-
-#cardd:hover {
-    transform: scale(1.05); 
-    box-shadow: 0px 4px 10px #f7be42; 
-}
-
-#cardd img {
-    width: 100%;        
-    height: 300px;      
-    object-fit: cover;  
-}
-.btn-box {
-    display: flex;
-    margin-top: 10px; 
-}
-.btn-box a {
-    display: inline-block;
-    padding: 10px 55px;
-    background-color: #ffbe33;
-    color: #ffffff;
-    border-radius: 45px;
-    transition: all 0.3s;
-    border: none;
-}
-.btn-box a:hover {
-    background-color: #e69c00;
-}
-.card-body {
-    padding-top: 1px; 
-    padding-bottom: 15px; 
-    padding-left: 15px; 
-    padding-right: 15px;
   }
   
-  .card-title {
-    margin-top: 5px; 
+  #form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
   }
   
-  .card-text {
-    margin-top: 5px; 
-  }
-  #img1{
-    border-radius: 8px; 
-    overflow: hidden;    
-    border: 2px solid #ddd; 
+  .chat-box {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
   }
- 
-
-
-
+  
+  .messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+  
+  .message.user {
+    background-color: #f1f1f1;
+    text-align: right;
+  }
+  
+  .message.assistant {
+    background-color: #f7be42;
+    color: white;
+    text-align: left;
+  }
+  
+  .input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0 0 0 10px;
+  }
+  
+  button {
+    background-color: #f7be42;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 0 10px 0;
+  }
+  
+  button:hover {
+    background-color: #eaaa22;
+  }
 
 
 /********************************************************/
