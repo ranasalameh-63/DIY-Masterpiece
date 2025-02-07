@@ -68,6 +68,11 @@ a {
 	margin: 15px 0;
 }
 
+#bb{
+	color: white;
+	font-size: 11px;
+}
+
 button {
 	border-radius: 20px;
 	border: 1px solid #222831;
