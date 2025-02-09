@@ -53,128 +53,181 @@ body {
   color: #f7be42; 
 }
 /**************** Sections style ************/
-.slider-area {
-    position: relative;
-    padding: 100px 0;
-    text-align: center;
-    color: #222831;
+
+.highlight-color {
+    color: #ffbe33;
+    font-family:'Dancing Script', cursive ;
+}
+#textt{
+    font-size: 48px;
+}
+#contain{
+    margin-top: 80px !important;
 }
 
-.hero__caption h1 {
-    font-size: 3rem;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 1px;
+
+/* Buttons */
+.btn-custom {
+    background-color: #ffbe33;
+    border-color: #ffbe33;
+    color: white;
+    transition: all 0.3s ease;
 }
+
+.btn-custom:hover {
+    background-color: #e5ab2d;
+    border-color: #e5ab2d;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Search Container */
+.search-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-container:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Image Styles */
+.professional-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .search-container {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+
+#section2{
+    margin-top: 100px;
+}
+
+
 
 /* تصميم الكاردات */
-.single-services {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+.card {
+    border: none;
     padding: 20px;
     margin-bottom: 30px;
+    border-top: 3px solid #e5ab2d;
 }
 
-.single-services:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.services-ion {
-    font-size: 40px;
-    color: #ffbe33;
+.location {
+    color: #666;
+    padding-left: 15px;
+    border-left: 2px solid #e5ab2d;
+    margin: 10px 0;
 }
 
-.services-cap h5 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 15px;
-}
-
-.services-cap a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease;
-}
-
-.services-cap a:hover {
-    color: #ffbe33;
-}
-
-/* تأثير على الأزرار */
-.border-btn2 {
-    background-color: #ffbe33;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.border-btn2:hover {
-    background-color: #ff8c00;
-}
-
-/* تنسيق السلايدر */
-.slider-active .single-slider {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center center;
-}
-
-.slider-active .single-slider .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* تصميم الصور في الحواف */
-.job-items {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-items:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.company-img img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.job-tittle h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
+.occupation {
+    font-weight: 500;
     color: #333;
 }
 
-.items-link a {
-    background-color: #ffbe33;
-    padding: 6px 18px;
-    border-radius: 30px;
+.experience {
+    color: #888;
+    margin: 15px 0;
+}
+
+.book-now {
+    border: 1px solid #e5ab2d;
+    color: #e5ab2d;
+    padding: 8px 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.book-now:hover {
+    background-color: #e5ab2d;
     color: white;
-    font-weight: 600;
     text-decoration: none;
 }
 
-.items-link a:hover {
-    background-color: #ff8c00;
+/* Slider Styles */
+.cards-slider {
+    position: relative;
 }
 
+/* Hide Radio Buttons */
+.cards-slider input[type="radio"] {
+    display: none;
+}
 
+/* Slides Container */
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+/* Show active slide based on radio selection */
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+
+/* Navigation Styles */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 3px;
+    background-color: #ddd;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Active Navigation State */
+#slide1:checked ~ .navigation label:nth-child(1),
+#slide2:checked ~ .navigation label:nth-child(2) {
+    background-color: #e5ab2d;
+    width: 50px;
+}
+
+.nav-btn:hover {
+    background-color: #e5ab2d;
+}
 .layout_padding {
   padding: 90px 0;
 }
@@ -199,11 +252,7 @@ body {
   padding-bottom: 90px;
 }
 
-h1,
-h2 {
-  font-family: "Dancing Script", cursive;
-  padding-top: 70px;
-}
+
 
 h5{
   padding-top: 30px !important;

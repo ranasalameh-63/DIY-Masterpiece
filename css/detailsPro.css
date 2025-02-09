@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.navbar {
+  padding: 15px 20px; 
+  font-family: "Dancing Script", cursive;
+  background-color: #e69d00b2;
+}
+.navbar-nav {
+  gap: 20px; 
+}
+
+.navbar-brand span {
+  color: #ffbe33; 
+  font-size: 1.5rem;
+  font-weight: bold; 
+}
+
+.navbar-nav .nav-link {
+  color: #fff; 
+  font-size: 23px; 
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn1 {
+  font-family: 'Dancing Script', cursive; 
+  font-size: 18px; 
+  font-weight: bold; 
+}
+.play{
+  font-family: 'Dancing Script', cursive; 
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav_search-btn i {
+  color: #fff; 
+}
+
+.nav_search-btn:hover i {
+  color: #f7be42; 
+}
+#hero-image {
+  filter: brightness(60%);
+}
+
+
+
+h5{
+  padding-top: 30px !important;
+}
+
+/********************************************************/
+/*Hero section*/
+
+.intro {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  .intro .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro .content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+  }
+  
+  .intro .text {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .intro .text h2 {
+    font-size: 1.8rem;
+    color: #222831;
+    margin-bottom: 10px;
+  }
+  
+  .intro .text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .intro .text ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .intro .text ul li {
+    font-size: 1rem;
+    color: #eaaa22;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .intro .text ul li::before {
+    content: "💡";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: #3a7bd5;
+  }
+  
+  .intro .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .intro .image img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 450px;
+  }
+  
+  .divider {
+    width: 80%; 
+    height: 2px; 
+    background: linear-gradient(to right, #eaaa22, #222831); 
+    margin: 30px auto; 
+    border-radius: 5px; 
+  }
+
+#text {
+    color: #222831;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  #p1{
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color: #222831;
+  }
+  
+  #form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  
+  .chat-box {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+  }
+  
+  
+  .message.user {
+    background-color: #f1f1f1;
+    text-align: right;
+  }
+  
+  .message.assistant {
+    background-color: #f7be42;
+    color: white;
+    text-align: left;
+  }
+  
+  .input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0 0 0 10px;
+  }
+  
+  button {
+    background-color: #f7be42;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 0 10px 0;
+  }
+  
+  button:hover {
+    background-color: #eaaa22;
+  }
+
+
+/********************************************************/
+
+/*header section*/
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* زر مخصص */
+.btn-custom {
+    background-color: #e5ab2d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #d49424;
+}
+
+/* تنسيق النصوص */
+.text-muted {
+    font-size: 14px;
+    color: #777;
+}
+
+/* تصغير الحاوية */
+.container {
+    max-width: 500px;
+}
+
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+}
+.navbar-brand span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.custom_nav-container {
+  padding: 0;
+}
+.custom_nav-container .navbar-nav {
+  padding-left: 18%;
+}
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+  color: #ffbe33;
+}
+
+.custom_nav-container .nav_search-btn {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  margin: 0 10px;
+}
+.custom_nav-container .nav_search-btn:hover {
+  color: #ffbe33;
+}
+
+.user_option {
+  display: flex;
+  align-items: center;
+}
+.user_option a {
+  margin: 0 10px;
+}
+.user_option .user_link {
+  color: #ffffff;
+}
+.user_option .user_link:hover {
+  color: #ffbe33;
+}
+.user_option .cart_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_option .cart_link svg {
+  width: 17px;
+  height: auto;
+  fill: #ffffff;
+  margin-bottom: 2px;
+}
+.user_option .cart_link:hover svg {
+  fill: #ffbe33;
+}
+.user_option .login-btn {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: white;
+  color: #ffbe33;
+  border-radius: 45px;
+  transition: all 0.3s;
+  border: none;
+  font-size: 20px;
+}
+.user_option .login-btn:hover {
+  text-decoration: underline #ffbe33 ;
+}
+#links :hover{
+  background-color: #ffbe33 ;
+
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+  padding: 0;
+  width: 37px;
+  height: 42px;
+  transition: all 0.3s;
+}
+.custom_nav-container .navbar-toggler span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 7px 0;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  top: -10px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.custom_nav-container .navbar-toggler span::after {
+  top: 10px;
+}
+.custom_nav-container .navbar-toggler[aria-expanded=true] {
+  transform: rotate(360deg);
+}
+.custom_nav-container .navbar-toggler[aria-expanded=true] span {
+  transform: rotate(45deg);
+}
+.custom_nav-container .navbar-toggler[aria-expanded=true] span::before, .custom_nav-container .navbar-toggler[aria-expanded=true] span::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+
+
+
+
+
+
+/* footer section*/
+.footer_section {
+  background-color: #222831;
+  color: #ffffff;
+  padding: 75px 0 40px 0;
+  text-align: center;
+}
+.footer_section h4 {
+  font-size: 28px;
+}
+.footer_section h4,
+.footer_section .footer-logo {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+}
+.footer_section p {
+  color: #dbdbdb;
+}
+.footer_section .footer-col {
+  margin-bottom: 30px;
+}
+.footer_section .footer_contact .contact_link_box {
+  display: flex;
+  flex-direction: column;
+}
+.footer_section .footer_contact .contact_link_box a {
+  margin: 5px 0;
+  color: #ffffff;
+}
+.footer_section .footer_contact .contact_link_box a i {
+  margin-right: 5px;
+}
+.footer_section .footer_contact .contact_link_box a:hover {
+  color: #ffbe33;
+}
+.footer_section .footer-logo {
+  display: block;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1;
+  color: #ffffff;
+}
+.footer_section .footer_social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer_section .footer_social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #222831;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border-radius: 100%;
+  margin: 0 2.5px;
+  font-size: 18px;
+}
+.footer_section .footer_social a:hover {
+  color: #ffbe33;
+}
+.footer_section .footer-info {
+  text-align: center;
+  margin-top: 25px;
+}
+.footer_section .footer-info p {
+  color: #ffffff;
+  margin: 0;
+}
+.footer_section .footer-info p a {
+  color: inherit;
+}/*# sourceMappingURL=style.css.map */
